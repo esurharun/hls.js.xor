@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/*
+bower_components/*
+/streams.js
+lib
+npm-debug.log
+demo/hls
+demo/movies
