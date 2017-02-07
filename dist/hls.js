@@ -13259,13 +13259,13 @@ var XhrLoader = function () {
             var fn_arr = xhr.responseURL.split('/');
             var fname = fn_arr.pop();
 
-            console.log('XHR RESPONSE :' + xhr.responseURL + ' - ' + fname);
+           //   console.log('XHR RESPONSE :' + xhr.responseURL + ' - ' + fname);
             if (xhr.responseURL.split('/').pop().startsWith('_')) {
 
-              console.log('ENCRYPTED ');
+             // console.log('ENCRYPTED ');
               if (xhr.responseURL.endsWith('.ts') || xhr.responseURL.endsWith('.TS')) {
 
-                console.log('DECODE_');
+               // console.log('DECODE_');
                 var datam = new Uint8Array(data);
                 for (var r = 0; r < datam.length; r++) {
                   var before = datam[r];
